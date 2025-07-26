@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧾 Accounting Dashboard Template
 
-## Getting Started
+A complete, production-ready **Accounting Dashboard** built with **Next.js**, **TypeScript**, and **Tailwind CSS**. This template provides all the essential components and features to manage and visualize financial operations for small to medium businesses, startups, or SaaS products.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- **Authentication & Authorization**
+  - Role-based access (Admin, Accountant, Viewer, etc.)
+- **Dashboard Overview**
+  - Summary cards (Total Revenue, Expenses, Profit, Invoices)
+  - Recent transactions, cash flow, and outstanding balances
+- **Invoice Management**
+  - Create, edit, and download invoices (PDF support)
+  - Filter by client, status, and date range
+- **Expense Tracking**
+  - Categorized expenses with visual breakdown
+  - Import/export capabilities (CSV, Excel)
+- **Reports & Analytics**
+  - Income statements, balance sheets, profit & loss
+  - Interactive charts (bar, pie, line)
+- **Client & Vendor Management**
+  - Add/edit/delete client or vendor profiles
+  - Associate invoices and expenses
+- **Multi-Currency & Tax Support**
+  - Configurable tax rates, GST/VAT tracking
+  - Currency conversion based on real-time exchange rates
+- **Responsive UI**
+  - Mobile-friendly and accessible design
+- **Built with:**
+  - Next.js (App Router)
+  - Tailwind CSS
+  - TypeScript
+  - React Query
+  - ShadCN UI
+  - Zustand/Redux (optional state management)
+  - Prisma ORM + PostgreSQL (or any SQL DB)
+  - REST or GraphQL APIs
+
+---
+
+## 🧑‍💻 Getting Started
+
+Clone the repository and install dependencies:
 
 ```bash
-npm run dev
+git clone https://github.com/yourusername/accounting-dashboard-template.git
+cd accounting-dashboard-template
+
+# install dependencies
+pnpm install
 # or
-yarn dev
+yarn install
 # or
-pnpm dev
+npm install
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
 
-You can start editing the Page by modifying `app/Page.tsx`. The Page auto-updates as you edit the file.
-
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+/components → Reusable UI components
+/pages → Application routes
+/app → (if using App Router)
+/lib → Utility functions and libraries
+/prisma → Database schema and seed
+/public → Static assets
+/styles → Tailwind and global styles
